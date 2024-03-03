@@ -93,6 +93,6 @@ let main args =
 
     renderPage config.Title viewModel
     |> RenderView.AsString.htmlDocument
-    |> (fun s -> File.WriteAllText($"{outputDir}/index.html", s))
+    |> (fun s -> File.WriteAllText($"{outputDir}/chartsindex.html", s))
 
     0
