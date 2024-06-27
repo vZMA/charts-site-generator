@@ -34,8 +34,8 @@ let getAllAirports (config: Config) =
 
 let makeUrl airports =
     let airportsQueryString = String.concat "," airports
-    $"https://api.aviationapi.com/v1/charts?apt={airportsQueryString}"
-
+    $"https://charts-api.oakartcc.org/v1/charts?apt={airportsQueryString}"
+//$"https://api.aviationapi.com/v1/charts?apt={airportsQueryString}"//
 let fetchCharts (url: string) =
     task {
         let httpClient = new HttpClient()
